@@ -1,0 +1,20 @@
+# 公開リポジトリ。許可したものだけを置く。
+# covers_repo.push() は git add -A を使うので、誤って置いたファイルも上がってしまう。
+# そこで既定で全部無視し、画像だけを許可する。
+*
+!.gitignore
+!.nojekyll
+!README.md
+!covers/
+!covers/*.jpg
+!photos/
+!photos/*.jpg
+!photos/*.jpeg
+!photos/*.png
+!photos/*.webp
+# 絶対に置かないもの（許可の取り消しではなく、念のための明示）
+.env
+*.env
+queue.json
+*.json
+!package.json
